@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Care Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="toast" id="toast">
+        <div class="toast-icon">✓</div><span id="toastMsg">Done!</span>
+    </div>
+
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-item">
+                <div class="topbar-left">
+                    <i class="bx bx-phone">: +91 XXXX XX XXXX </i>
+                    <i class="bx bxl-whatsapp"><span> : +91 XXXXXXXXXX</span>(From 8AM to 9PM)</i>
+                </div>
+
+                <div class="topbar-right">
+                    <i class="bx bxs-ambulance"> 24 X 7 Emergency: +91 XXXX XX XXXX</i>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="bx bxs-layer"> </i>
+                </div>
+                <div class="logo-text">Care<span>Hub</span></div>
+            </div>
+            <nav class="navbar" id="sidemenu">
+                <i class="bx bx-x" onclick="closemenu()"></i>
+                <a href="#home"  class="active"> Home</a>
+                <a href="#about">About</a>
+                <a href="#Specialities">Specialities</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#appt">Appointment</a>
+
+            </nav>
+            <i class="bx bx-menu" onclick="openmenu()"></i>
+            <div class="header-right">
+                <div class="hours"><span>9AM-6PM</span> Mon to Sat</div>
+                <button class="btn" onclick="scrollToElement('appt')">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="home" id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <h1>Your Health Deserves<br>Expert Care & Trust</h1>
+                <p>Experience world-class healthcare with a team of dedicated specialists. From diagnosis to
+                    recovery, we're with you every step.</p>
+
+                <div class="home-btn">
+                    <button class="first-btn" onclick="scrollToElement('appt')">Schedule Appointment</button>
+                    <button class="second-btn" onclick="scrollToElement('about')">Learn More</button>
+                </div>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-num" data-count="25">0</div>
+                        <div class="stat-label">Years Serving</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-num" data-count="140">0</div>
+                        <div class="stat-label">Expert Doctors</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="visual">
+                <div class="visual-card">🩺</div>
+                <div class="visual-card">💊</div>
+                <div class="visual-large">
+                    <div class="about-badge">
+                        <div class="badge-num">50K</div>
+                        <div class="badge-text">Patients Treated</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="card">
+            <div class="card1">
+                <i class="bx bx-user"></i>
+                <h2>Experts Specialists</h2>
+                <p>Highly trained doctors with 10+ years of experience in their fields.</p>
+            </div>
+            <div class="card2">
+                <i class="bx bx-pulse"></i>
+                <h2>24/7 Emergency</h2>
+                <p>Round-the-clock emergency care with fully equipped facilities.</p>
+            </div>
+            <div class="card3">
+                <i class="bx bx-time"></i>
+                <h2>Immediate Support</h2>
+                <p>Quick appoinment and immediate confirmation for inconvenience.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-left">
+
+                <video src="hospital_tour.mp4 " autoplay loop muted alt=""></video>
+
+            </div>
+            <div class="about-right">
+                <h3>Redefining Healthcare <br>in North Bengal</h3>
+                <p>We believe healthcare should be accessible, affordable, and of the highest quality. Our mission is to
+                    provide comprehensive care that makes a real difference in people's lives.</p>
+
+                <div class="tab-titles">
+                    <button class="tab-links active" onclick="switchTab(event,'Vission')">Vission & Mission</button>
+                    <button class="tab-links" onclick="switchTab(event,'Services')">Services</button>
+                    <button class="tab-links" onclick="switchTab(event,'Values')">Values</button>
+                </div>
+                <div class="tab-contents active" id="Vission">
+                    <div class="tab-container ">
+                        <i class="bx bx-show"></i>
+                        <h4>Our Vision</h4>
+                        <p>To be the most trusted healthcare provider in North Bengal, known for excellence and
+                            compassion.</p>
+                    </div>
+                    <div class="tab-container">
+                        <i class="bx bx-home"></i>
+                        <h4>Our Mission</h4>
+                        <p>Deliver world-class healthcare with cutting-edge technology and patient-centered approach.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="tab-contents" id="Services">
+                    <div class="tab-container">
+                        <i class="bx bx-globe"></i>
+                        <h4>Advanced Diagnostics</h4>
+                        <p>In-house labs and imaging for quick and accurate diagnosis.</p>
+                    </div>
+                    <div class="tab-container">
+                        <i class="bx bx-heart"></i>
+                        <h4>Multi-Specialty Care</h4>
+                        <p>8+ departments with state-of-the-art medical equipment and facilities.</p>
+                    </div>
+
+                </div>
+                <div class="tab-contents" id="Values">
+                    <div class="tab-container">
+                        <i class="bx bx-smile"></i>
+                        <h4>Patient First</h4>
+                        <p>Every decision centers on what's best for our patients' health and wellbeing.</p>
+                    </div>
+                    <div class="tab-container">
+                        <i class="bx bx-shield"></i>
+                        <h4>Integrity & Trust</h4>
+                        <p>Transparent pricing, honest communication, and genuine care for all.</p>
+                    </div>
+
+                </div>
+                <div class="about-btn">
+                    <button id="Appoinment" onclick="scrollToElement('appt')">Book Appoinment</button>
+                    <button id="Doctors" onclick="scrollToElement('doctors')">Meet Our Team</button>
+
+                </div>
+
+
+            </div>
+    </section>
+    <div class="stat">
+        <div class="box">
+            <div class="num" data-count="25">0</div>
+            <div class="label">YEARS OF EXCELLANCE</div>
+        </div>
+        <div class="box">
+            <div class="num" data-count="140">0</div>
+            <div class="label">EXPERTS DOCTORS</div>
+        </div>
+        <div class="box">
+            <div class="num" data-count="50000">0</div>
+            <div class="label">PATIENTS TREATED</div>
+        </div>
+        <div class="box">
+            <div class="num" data-count="8">0</div>
+            <div class="label">DEPARTMENTS</div>
+        </div>
+
+
+    </div>
+
+    <section id="Specialities">
+        <div class="spec-container">
+            <button>WHAT WE OFFER</button>
+            <h5>Our Specialities</h5>
+            <p>A comprehensive range of medical services to meet all your healthcare<br> needs in one place.</p>
+            <div class="grid-card">
+                <div class="spec-card">
+                    <i class="bx bx-brain"></i>
+                    <h6>Orthology</h6>
+                    <p>Brain and nervous system disorder expertise with lastest treatments.</p>
+                </div>
+                <div class="spec-card">
+                    <i class="bx bx-heart"></i>
+                    <h6>Cardiology</h6>
+                    <p>Advanced cardiac care with interventional and diagnostic services.</p>
+                </div>
+                <div class="spec-card">
+                    <i class="bx bx-plus-medical"></i>
+                    <h6>Nephrology</h6>
+                    <p>Kidney disease treatment and dialysis management programs.</p>
+                </div>
+                <div class="spec-card">
+                    <i class="bx bx-bone"></i>
+                    <h6>Orthopaedics</h6>
+                    <p>Joint replacement and bone disorder treatment expertise.</p>
+                </div>
+
+                <div class="spec-card">
+                    <i class="bx bx-show"></i>
+                    <h6>Ophthalmology</h6>
+                    <p>Eye care from routine checkups to complex surgical procedure.</p>
+                </div>
+                <div class="spec-card">
+                    <i class="bx bx-child"></i>
+                    <h6>Paediatrics</h6>
+                    <p>Gentle, specialized care for infants, children and adolescents.</p>
+                </div>
+                <div class="spec-card">
+                    <i class="bx bx-pulse"></i>
+                    <h6>General Medicine</h6>
+                    <p>Comprehensive primary care and preventive health services.</p>
+                </div>
+                <div class="spec-card">
+                    <i class="bx bx-plus-medical"></i>
+                    <h6>Emergency Medicine</h6>
+                    <p>24/7 critical care and emergency response services available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doctors" id="doctors">
+        <div class="doc-container">
+            <button>MEET THE TEAM</button>
+            <h5>Our Doctors</h5>
+            <p>Highly experienced specialists dedicated to providing exceptional patient <br>care.</p>
+            <div class="titles">
+                <button class="filter-btn active" onclick="filterdoctor(this,'All')">All Doctors</button>
+                <button class="filter-btn" onclick="filterdoctor(this,'Cardiology')">Cardiology</button>
+                <button class="filter-btn" onclick="filterdoctor(this,'Neurology')">Neurology </button>
+                <button class="filter-btn" onclick="filterdoctor(this,'Orthopaedics')">Orthopaedics</button>
+            </div>
+            <div class="contents">
+                <div class="doc-card" data-spec="Cardiology">
+                    <div class="doc-img">
+                        <div class="doc-name">PG</div>
+                        <button class="doc-dept">Cardiology</button>
+                    </div>
+                    <div class="doc-body">
+                        <h7>Dr.Priya Gupta</h7>
+                        <p>Interventional Cardiologist</p>
+                    </div>
+                    <div class="doc-footer">
+                        <div class="doc-exp">12 yrs<span> experience</span></div>
+                        <button onclick="bookDoctor('Dr.Priya Gupta','Cardiology')">Book</button>
+                    </div>
+                </div>
+                <div class="doc-card" data-spec="Neurology">
+                    <div class="doc-img">
+                        <div class="doc-name">AS</div>
+                        <button class="doc-dept">Neurology</button>
+                    </div>
+                    <div class="doc-body">
+                        <h7>Dr.Arnab Sharma</h7>
+                        <p>Senior Neurologist</p>
+                    </div>
+                    <div class="doc-footer">
+                        <div class="doc-exp">15 yrs<span> experience</span></div>
+                        <button onclick="bookDoctor('Dr.Arnab Sharma','Neurology')">Book</button>
+                    </div>
+                </div>
+                <div class="doc-card" data-spec="Orthopaedics">
+                    <div class="doc-img">
+                        <div class="doc-name">SD</div>
+                        <button class="doc-dept">Orthopaedics</button>
+                    </div>
+                    <div class="doc-body">
+                        <h7>Dr.Sudipta Dey</h7>
+                        <p>Joint Replacement Specialist</p>
+                    </div>
+                    <div class="doc-footer">
+                        <div class="doc-exp">14 yrs<span> experience</span></div>
+                        <button onclick="bookDoctor('Dr.Sudipta Dey','Orthopaedics')">Book</button>
+                    </div>
+                </div>
+                <div class="doc-card" data-spec="Cardiology">
+                    <div class="doc-img">
+                        <div class="doc-name">NB</div>
+                        <button class="doc-dept">Nephrology</button>
+                    </div>
+                    <div class="doc-body">
+                        <h7>Dr.Rajeev Bose</h7>
+                        <p>Renal Specialist</p>
+                    </div>
+                    <div class="doc-footer">
+                        <div class="doc-exp">11 yrs<span> experience</span></div>
+                        <button onclick="bookDoctor('Dr.Rajeev Bose','Nephrology')">Book</button>
+                    </div>
+                </div>
+
+                <div class="doc-card" data-spec="Neurology">
+                    <div class="doc-img">
+                        <div class="doc-name">NR</div>
+                        <button class="doc-dept">Neurology</button>
+                    </div>
+                    <div class="doc-body">
+                        <h7>Dr.Nita Roy</h7>
+                        <p>Neurosurgeon</p>
+                    </div>
+                    <div class="doc-footer">
+                        <div class="doc-exp">13 yrs<span> experience</span></div>
+                        <button onclick="bookDoctor('Dr.Nita Roy','Neurology')">Book</button>
+                    </div>
+                </div>
+
+                <div class="doc-card" data-spec="Cardiology">
+                    <div class="doc-img">
+                        <div class="doc-name">AS2</div>
+                        <button class="doc-dept">Cardiology</button>
+                    </div>
+                    <div class="doc-body">
+                        <h7>Dr.Arun Sen</h7>
+                        <p>Cardiac Specialist</p>
+                    </div>
+                    <div class="doc-footer">
+                        <div class="doc-exp">10 yrs<span> experience</span></div>
+                        <button onclick="bookDoctor('Dr.Arun Sen','Cardiology')">Book</button>
+                    </div>
+                </div>
+
+                <div class="doc-card" data-spec="Orthopaedics">
+                    <div class="doc-img">
+                        <div class="doc-name">MD</div>
+                        <button class="doc-dept">Orthopaedic</button>
+                    </div>
+                    <div class="doc-body">
+                        <h7>Dr.Meena Das</h7>
+                        <p>Orthopaedic Surgeon</p>
+                    </div>
+                    <div class="doc-footer">
+                        <div class="doc-exp">11 yrs<span> experience</span></div>
+                        <button onclick="bookDoctor('Dr.Meena Das','Orthopaedics')">Book</button>
+                    </div>
+                </div>
+
+                <div class="doc-card" data-spec="All">
+                    <div class="doc-img">
+                        <div class="doc-name">TM</div>
+                        <button class="doc-dept">General Medicine</button>
+                    </div>
+                    <div class="doc-body">
+                        <h7>Dr.Tarun Mehta</h7>
+                        <p>General Physician</p>
+                    </div>
+                    <div class="doc-footer">
+                        <div class="doc-exp">16 yrs<span> experience</span></div>
+                        <button onclick="bookDoctor('Dr.Tarun Mehta','General Medicine')">Book</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="appt">
+        <div class="app-container">
+            <div class="app-left">
+                <button>BOOK YOUR APPOINTMENT</button>
+                <h8> <br>Get Expert Care <br>On Your Schedule</h8>
+                <p>Choose your preferred doctor and time. Our team will confirm your appointment immediately.</p>
+                <div class="app-box">
+                    <div class="app-boxes">
+                        <i class="bx bx-check-circle"></i>
+                        <div class="app-body">
+                            <p>Instant Confirmation</p>
+                            <p1>Receive SMS & email within seconds of booking.</p1>
+                        </div>
+                    </div>
+                    <div class="app-boxes">
+                        <i class="bx bx-shield"></i>
+                        <div class="app-body">
+                            <p>Your Data is Safe</p>
+                            <p1>100% confidential and secure information handling.</p1>
+                        </div>
+                    </div>
+                    <div class="app-boxes">
+                        <i class="bx bx-time-five"></i>
+                        <div class="app-body">
+                            <p>Flexible Timing</p>
+                            <p1>Morning, afternoon, or evening slots available.</p1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-right">
+                <div class="form" id="formBody">
+                    <h9>Book an Appoinment</h9>
+                    <p>Complete the form and we'll confirm your visit</p>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>FIRST NAME</label>
+                            <input type="text" id="fname" placeholder="Your name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>LAST NAME</label>
+                            <input type="text" id="lname" placeholder="Last name">
+                        </div>
+
+                        <div class="form-group full">
+                            <label>SPECIALIATY</label>
+                            <select id="spec">
+                                <option values="">Select Speciality</option>
+                                <option>Cardiology</option>
+                                <option>Neurology</option>
+                                <option>Orthopaedics</option>
+                                <option>Nephrology</option>
+                                <option>Paediatrics</option>
+                                <option>Ophthalmology</option>
+                                <option>General Medicine</option>
+                                <option>Emergency Medicine</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full">
+                            <label> DOCTOR</label>
+                            <select id="doc">
+                                <option value="">Select a Doctor</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>DATE</label>
+                            <input type="date" id="apptDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label>TIME</label>
+                            <input type="time" id="apptTime">
+                        </div>
+
+                        <div class="form-group full">
+                            <label>PHONE</label>
+                            <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                    </div>
+                    <button class="btn-submit" id="submitBtn" onclick="submitAppointment()">Confirm Appointment
+                        →</button>
+                    <div class="form-trust">
+                        <i class="bx bx-check"></i>
+                        Your information is completely secure
+                    </div>
+                </div>
+                <div class="success-state" id="successBody">
+                    <div class="success-icon">✅</div>
+                    <h4>Appointment Confirmed!</h4>
+                    <p id="successText">Thank you for booking. Our team will contact you shortly to confirm details.
+                    </p>
+                    <button class="btn-primary" onclick="resetForm()">Book Another →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="patient">
+        <div class="pat-container">
+            <button>PATIENT STORIES</button>
+            <h10>What Patients Say</h10>
+            <p>Real experiences from real patients who trusted us with their care.</p>
+            <i class="bx bx-left-arrow-alt"></i>
+            <i class="bx bx-right-arrow-alt"></i>
+            <div class="testimonials-grid">
+                <div class="test-grid">
+                    <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <p>"The cardiology team was phenomenal. Dr. Gupta took time to explain everything and the entire
+                        process was seamless."</p>
+                    <div class="test-author">
+                        <div class="test-avatar">PG</div>
+                        <div class="test-name">Priya Gupta</div>
+                        <div class="test-dept">Cardiology patient</div>
+                    </div>
+                </div>
+                <div class="test-grid">
+                    <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <p>My neurology treatment at People Care was life-changing. Professional, caring, and highly
+                        competent doctors."</p>
+                    <div class="test-author">
+                        <div class="test-avatar">GK</div>
+                        <div class="test-name">Gaurav Kumar</div>
+                        <div class="test-dept">Cardiology patient</div>
+                    </div>
+                </div>
+                <div class="test-grid">
+                    <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <p>My knee replacement recovery was excellent. The whole team — from surgery to rehabilitation — was
+                        outstanding."</p>
+                    <div class="test-author">
+                        <div class="test-avatar">SM</div>
+                        <div class="test-name">Sunita Majumdar</div>
+                        <div class="test-dept">Cardiology patient</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h12>CareHub Hospital</h12>
+                <p>Committed to delivering world-class healthcare with compassion and integrity across North Bengal.</p>
+                <div class="footer-contact">
+                    <i class="bx bx-smile"> Siliguri, West Bengal -734009, India</i>
+                    <i class="bx bx-phone"> +91 XXXXX XXXXX</i>
+                    <i class="bx bxs-envelope"> admin@carehub.hospital</i>
+                </div>
+            </div>
+            <div>
+                <h11>HOSPITAL</h11>
+                <ul>
+                    <li><a onclick="scrollToElement('home')">Home</a></li>
+                    <li><a onclick="scrollToElement('about')">About us</a> </li>
+                    <li><a onclick="scrollToElement('Specialities')">Specialities</a></li>
+                    <li><a onclick="scrollToElement('doctors')"> Doctors</a></li>
+                </ul>
+            </div>
+            <div>
+                <h11>SERVICES</h11>
+                <ul>
+                    <li><a onclick="scrollToElement('appt')">Book Appointment</a></li>
+                    <li><a onclick="showToast('📋 Online enquiry form')">Online Enquiry</a></li>
+                    <li><a onclick="showToast('📄 Medical records available')">Medical Records</a></li>
+                    <li><a onclick="showToast('🏥 Mediclaim support')">Mediclaim Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h11>Connect</h11>
+                <ul>
+                    <li><a onclick="showToast('📰 Latest hospital news')">News & Events</a></li>
+                    <li><a onclick="showToast('📖 Health tips blog')">Blog</a></li>
+                    <li><a onclick="scrollToElement('appt')">Contact Us</a></li>
+                    <li><a onclick="showToast('🔒 Privacy policy')">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 CareHub Hospital. All rights reserved.</p>
+            <div class="social-icon">
+                <i class="bx bxl-youtube"></i>
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-linkedin"></i>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="mains.js"></script>
+
+</body>
+
+</html>
