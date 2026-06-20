@@ -1,10 +1,23 @@
-"CareHub Hospital - Responsive Medical Website"
-Designed and developed a fully functional, modern hospital website featuring:
+🏥 CareHub Hospital 
 
-Responsive design optimized for desktop, tablet, and mobile devices
-Interactive appointment booking system with form validation and doctor pre-selection
-Dynamic filtering system for doctor/speciality discovery
-Animated counters, smooth scroll navigation, and modal video integration
-Toast notifications and real-time form feedback
-Professional UI with cyan accent color scheme and modern typography (Inter + Poppins)
-All buttons and interactive elements fully functional with vanilla JavaScript
+A modern and responsive hospital website designed to provide patients with easy access to healthcare information, doctor details, and appointment booking services.
+
+✨ Features
+
+- 📱 Fully Responsive Design
+- 👨‍⚕️ Doctor Profiles
+- 📅 Appointment Booking Section
+- 🏥 Department Information
+- 📞 Contact & Emergency Information
+- 🎨 Modern UI/UX Design
+- ⚡ Smooth Navigation
+
+🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+
+
+🚀 Live Demo
